@@ -1,0 +1,125 @@
+$color-primary: #002251;
+$color-menu: #f5f5f5;
+$color-hover: #e0e0e050;
+
+.selected {
+	color: black;
+}
+
+.nav-link {
+	color: $color-primary;
+}
+.menu {
+	position: fixed;
+	width: 17.361%;
+	top: 27.777%;
+	display: flex;
+	height: 44.446%;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+	border-top: 1px solid $color-menu;
+	border-right: 1px solid $color-menu;
+	border-bottom: 1px solid $color-menu;
+	background-color: transparent;
+	cursor: pointer;
+	opacity: 0.5;
+
+	&:hover {
+		opacity: 1;
+		background-color: $color-hover;
+	}
+
+	&-open {
+		width: 100%;
+		height: 100vh;
+		animation-name: animationMenuOpen;
+		animation-duration: 1s;
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		&-link {
+			text-decoration: none;
+			color: $color-menu;
+		}
+		&-link:hover {
+			text-decoration: none;
+			color: $color-hover;
+		}
+
+		& ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100vh;
+			justify-content: center;
+
+			& li {
+				list-style: none;
+				margin: 1em;
+				font-size: 22px;
+			}
+		}
+	}
+
+	& .menu-container {
+		width: 40px;
+		height: 30px;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		animation-name: animationMenu;
+		animation-duration: 1s;
+		background-color: transparent;
+		& .line {
+			border-top: 1px solid $color-menu;
+			display: block;
+			width: 100%;
+			height: 1px;
+		}
+	}
+	& .menu-container-img {
+		animation-name: animationMenuImg;
+		animation-duration: 2s;
+
+		& img {
+			width: 50px;
+		}
+	}
+}
+
+.none {
+	display: none !important;
+}
+
+@keyframes animationMenu {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes animationMenuOpen {
+	from {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes animationMenuImg {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
