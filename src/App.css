@@ -8,14 +8,10 @@ html, body {
   padding: 0;
   font-family: RobotoFont;
   font-size: 16px;
-  background-color: black;
   color: #fff;
   
 }
 
-body * {
-  background-color: #000;
-}
 
 .title-text {
   color: #fff;

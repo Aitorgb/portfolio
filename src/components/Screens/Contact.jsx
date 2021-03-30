@@ -1,14 +1,19 @@
-import { TextField } from '@material-ui/core';
 import React from 'react';
+import '../Stylesheet/Contact.scss';
 
 export default function Contact() {
 	return (
-		<div className="container">
-			<div className="col-md-6 mx-auto">
-				<TextField id="standard-basic" label="Nombre" />
-				<TextField id="standard-basic" label="Email" />
-				<TextField id="standard-basic" label="Nombre" />
+		<footer className="container footer">
+			<h2>TRABAJEMOS JUNTOS</h2>
+			<div className="row">
+				<div className="col-md-12">
+					Si estas interesado/a en un perfil junior Fullstack con muchas ganas de seguir aprendiendo y
+					creciendo profesionalmente, contacta conmigo.
+				</div>
 			</div>
-		</div>
+			<div className="row">
+				<div className="col-md-6" />
+			</div>
+		</footer>
 	);
 }
