@@ -1,6 +1,4 @@
-$color-primary: #002251;
-$color-menu: #3D405b;
-$color-hover: #e0e0e050;
+@import './Colors.scss';
 
 .selected {
 	color: black;
@@ -10,14 +8,21 @@ $color-hover: #e0e0e050;
 	color: $color-primary;
 }
 .menu {
-	position: fixed;
+	position: fixed !important;
 	cursor: pointer;
 	width: 100%;
 	height: 5em;
 	top: 0;
 	background-color: $color-menu;
 
+	& .logo {
+		color: $color-link;
+		text-decoration: line-through $color-link-hover;
 
+		&-simbol {
+			color: $color-link-hover;
+		}
+	}
 	&-button{
 		border: .5px solid gray;
 
@@ -25,32 +30,32 @@ $color-hover: #e0e0e050;
 
 	
 
-	& .menu-container {
-		width: 40px;
-		height: 30px;
-		position: relative;
-		overflow: hidden;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		animation-name: animationMenu;
-		animation-duration: 1s;
-		background-color: transparent;
-		& .line {
-			border-top: 1px solid $color-menu;
-			display: block;
-			width: 100%;
-			height: 1px;
-		}
-	}
-	& .menu-container-img {
-		animation-name: animationMenuImg;
-		animation-duration: 2s;
+	// & .menu-container {
+	// 	width: 40px;
+	// 	height: 30px;
+	// 	position: relative;
+	// 	overflow: hidden;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	justify-content: space-between;
+	// 	animation-name: animationMenu;
+	// 	animation-duration: 1s;
+	// 	background-color: transparent;
+	// 	& .line {
+	// 		border-top: 1px solid $color-menu;
+	// 		display: block;
+	// 		width: 100%;
+	// 		height: 1px;
+	// 	}
+	// }
+	// & .menu-container-img {
+	// 	animation-name: animationMenuImg;
+	// 	animation-duration: 2s;
 
-		& img {
-			width: 50px;
-		}
-	}
+	// 	& img {
+	// 		width: 50px;
+	// 	}
+	// }
 }
 
 .none {

@@ -4,10 +4,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function Menu() {
 	return (
-		<nav class="navbar navbar-expand-lg menu h-100">
+		<nav class="navbar navbar-expand-lg menu">
 			<div class="container">
-				<Link class="navbar-brand pull left" to="#">
-					&lt;AitorGuerrero/&gt;
+				<Link class="navbar-brand" to="/">
+					<span className='logo-simbol'>&lt;</span><span className='logo'>AitorGuerrero</span> <span className='logo-simbol'>/&gt;</span>
 				</Link>
 				<button
 					type="button"
@@ -29,7 +29,7 @@ export default function Menu() {
 						<NavLink activeClassName="menu-active" className="nav-link" to="#">
 							Proyectos
 						</NavLink>
-						<NavLink activeClassName="menu-active" className="nav-link" to="#">
+						<NavLink activeClassName="menu-active" className="nav-link" to="#" onClick={() => window.scrollTo(0,document.body.scrollHeight)}>
 							Contacto
 						</NavLink>
 					</div>
