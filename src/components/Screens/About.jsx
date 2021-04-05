@@ -3,8 +3,8 @@ import '../Stylesheet/About.scss'
 
 export default function About() {
 	return (
-		<div>
-			<div className="container about ">
+		<div className='about'>
+			<div className="container">
 				<h5 className="title-text"> &lt;Sobre mí&gt; </h5>
 				<div className='row'>
 					<div className='col-md-6'>

@@ -1,3 +1,20 @@
+@import './Colors.scss';
+
+
 .about {
     color: #fff;
+    background-color: $background-about;
+    padding: 8em 0 8em 0;
+    clip-path: none;
+    
+
 }
+
+
+@media only screen and (min-width: 992px) {
+    .about {
+        clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+        padding: 8em 0 13em 0;
+        margin-bottom: -10em;
+    }
+  }

@@ -6,20 +6,23 @@ export default function Menu() {
 	return (
 		<nav class="navbar navbar-expand-lg menu">
 			<div class="container">
-				<Link class="navbar-brand" to="/">
-					<span className='logo-simbol'>&lt;</span><span className='logo'>AitorGuerrero</span> <span className='logo-simbol'>/&gt;</span>
-				</Link>
-				<button
-					type="button"
-					class="navbar-toggle collapsed d-md-block d-lg-none menu-button"
-					data-toggle="collapse"
-					data-target="#navbar"
-					aria-expanded="false"
-					aria-controls="navbar"
-				>
-					<span class="sr-only">Toggle navigation</span>
-					<span className="navbar-toggler-icon" />
-				</button>
+				<div className="menu-bar">
+					<Link class="navbar-brand" to="/">
+						<span className="logo-simbol">&lt;</span>
+						<span className="logo">Aitor Guerrero</span>
+						<span className="logo-simbol">/&gt;</span>
+					</Link>
+					<button
+						type="button"
+						class="navbar-toggle collapsed d-md-block d-lg-none menu-button"
+						data-toggle="collapse"
+						data-target="#navbar"
+						aria-expanded="false"
+						aria-controls="navbar"
+					>
+						<span className="navbar-toggler-icon" />
+					</button>
+				</div>
 
 				<div className="navbar-collapse collapse justify-content-end" id="navbar">
 					<div className="nav navbar-nav">
@@ -29,7 +32,12 @@ export default function Menu() {
 						<NavLink activeClassName="menu-active" className="nav-link" to="#">
 							Proyectos
 						</NavLink>
-						<NavLink activeClassName="menu-active" className="nav-link" to="#" onClick={() => window.scrollTo(0,document.body.scrollHeight)}>
+						<NavLink
+							activeClassName="menu-active"
+							className="nav-link"
+							to="#"
+							onClick={() => window.scrollTo(0, document.body.scrollHeight)}
+						>
 							Contacto
 						</NavLink>
 					</div>
@@ -38,4 +46,3 @@ export default function Menu() {
 		</nav>
 	);
 }
-
