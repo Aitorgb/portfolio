@@ -5,6 +5,9 @@ import About from './components/Screens/About'
 import Projects from './components/Screens/Projects'
 import Menu from './components/Menu';
 import Contact from './components/Screens/Contact';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import { pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function App() {
   return (

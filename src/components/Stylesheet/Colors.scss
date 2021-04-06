@@ -5,6 +5,7 @@ $color-footer: #757575;
 $color-link: #81b29a;
 $color-link-hover: #337555;
 $background-about: #82b29a;
+$backgrount-project: #f2cc8f;
 
 // #3D405B;
 
@@ -19,5 +20,22 @@ $background-about: #82b29a;
         border-color: $color-link-hover;
         text-decoration: none;
     }
+}
+
+
+.button-cv {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 7px 35px;
+    margin-top: 20px;
+    background: transparent;
+    
+
+    &:hover {
+        color: $color-link-hover;
+        border-color: $color-link-hover;
+        text-decoration: none;
+    }
+
 }
 

@@ -7,12 +7,14 @@ export default function Projects() {
 	// 	console.log('hei');
 	// };
 	return (
-		<div className="container projects">
+		<div className='projects'>
+		<div className="container">
 			<h5 className='title-text'> &lt;Proyectos&gt; </h5>
 				<Project image="/img/projects/kiui-app.png" name="Kiui app" />
 				<Project image="/img/projects/you-work.png" name="You work!" />
 				<Project image="/img/projects/ironwar.png" name="Iron war" />
 			<h5 className='title-text'> &lt;/Proyectos&gt; </h5>
+		</div>
 		</div>
 	);
 }

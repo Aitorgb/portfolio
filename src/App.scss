@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
-  box-sizing:content-box;
+	box-sizing: content-box;
 }
 
 h3 {
@@ -18,8 +18,7 @@ h3 {
 	border-bottom: 2px solid $color-link;
 	padding-bottom: 10px;
 	margin-bottom: 20px !important;
-  color: $color-link;
-
+	color: $color-link;
 }
 
 * {
