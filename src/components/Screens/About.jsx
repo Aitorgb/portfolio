@@ -2,7 +2,6 @@ import React from 'react';
 import '../Stylesheet/About.scss';
 import { Document, Page } from 'react-pdf';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function About() {
 	const [ seeCv, setSeeCV ] = useState(false);

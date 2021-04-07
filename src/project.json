@@ -1,0 +1,14 @@
+[{
+    "name": "Kiui app",
+    "image": "/img/projects/kiui-app.png",
+    "description": "Página web destinada a la creación de eventos y compartirlos a través de whatsapp. A través de Kiui puedes gestionar el número de asistentes que acudira al evento, así como los asistentes verán toda la información al evento. Es totalmente responsive lo que permite usarlo tanto en ordenador como en móvil."
+
+}, {
+    "name": "You work!",
+    "image": "/img/projects/you-work.png",
+    "description": "Plataforma online que a través de Internet pone en contacto a personas que quieren ofrecer los espacios vacíos de sus oficinas o las oficinas completas en alquiler, con huéspedes que necesitan esos temporalmente para poder trabajar."
+}, {
+    "name": "Iron war",
+    "image": "/img/projects/ironwar.png",
+    "description": "Juego de guerra que consiste en llegar a recoger el trofeo final, matando a tus adversarios, cogiendo las diferentes monedas y superando los diferentes niveles de juego. A mayor nivel mayor será la dificultad."
+}]
