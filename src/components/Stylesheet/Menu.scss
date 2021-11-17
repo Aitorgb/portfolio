@@ -8,6 +8,33 @@
 	color: $color-primary;
 }
 .menu {
+	&-left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		width: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-right: 1px solid $color-border;
+
+		&-logo {
+			text-align: center;
+			padding: 20px 10px;
+			border-bottom: 1px solid $color-border;
+		}
+		&-icons {
+			width: 100%;
+		}
+
+		&-icon {
+			text-align: center;
+			padding: 20px 10px;
+			border-top: 1px solid $color-border;
+		}
+	}
 	position: fixed !important;
 	width: 100%;
 	top: 0;
@@ -19,7 +46,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		
 	}
 
 	& .logo {
@@ -30,9 +56,8 @@
 			color: $color-link-hover;
 		}
 	}
-	&-button{
+	&-button {
 		border: .5px solid gray;
-
 	}
 	& .navbar-nav a {
 		color: $color-link;
@@ -40,22 +65,16 @@
 		&:hover {
 			color: $color-link-hover;
 		}
-
-		
 	}
 }
 
 @media only screen and (max-width: 992px) {
-    .menu {
-
+	.menu {
 		& &-bar {
 			width: 100%;
 		}
-
-    }
-  }
-
-
+	}
+}
 
 .none {
 	display: none !important;

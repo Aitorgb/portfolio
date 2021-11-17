@@ -20,10 +20,10 @@ export default function Contact() {
 			<div className="container footer-last">
 				<div className='footer-last-link'>
 					<a className='footer-link' href='https://www.linkedin.com/in/aitor-guerrero/'>
-						<i class="fa fa-2x fa-linkedin" aria-hidden="true" />
+						<i className="fa fa-2x fa-linkedin" aria-hidden="true" />
 					</a>
 					<a className='footer-link' href="https://github.com/Aitorgb">
-						<i class="fa fa-2x fa-github" aria-hidden="true" />
+						<i className="fa fa-2x fa-github" aria-hidden="true" />
 					</a>
 				</div>
 				<div className='footer-last-created'>Desarrollado con 💙 por Aitor Guerrero © 2021</div>
