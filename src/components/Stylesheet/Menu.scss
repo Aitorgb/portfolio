@@ -1,7 +1,7 @@
 @import './Colors.scss';
 
 .selected {
-	color: black;
+	color: white;
 }
 
 .nav-link {
@@ -24,6 +24,7 @@
 			text-align: center;
 			padding: 20px 10px;
 			border-bottom: 1px solid $color-border;
+			height: 80px;
 		}
 		&-icons {
 			width: 100%;
@@ -33,34 +34,69 @@
 			text-align: center;
 			padding: 20px 10px;
 			border-top: 1px solid $color-border;
+			height: 80px;
 		}
 	}
-	position: fixed !important;
+
 	width: 100%;
 	top: 0;
-	background-color: $color-menu;
-	z-index: 100;
+	right: 3%;
+	position: fixed;
 
-	& &-bar {
-		height: 3.5em;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+	&-option {
+		height: 80px;
+		align-items: end;
+		padding: 0;
+		margin-bottom: 100px;
 	}
 
-	& .logo {
-		color: $color-link;
-		text-decoration: line-through $color-link-hover;
+	&-arrow {
+		display: flex;
+		flex-direction: column;
+		height: 120px;
+		align-items: center !important;
+		padding: 0;
+		width: 130px;
 
-		&-simbol {
-			color: $color-link-hover;
+		.line {
+			border-bottom: 1px solid $color-border;
+			width: 100%;
+			&-vertical {
+				transform: rotate(90deg);
+			}
+		}
+
+		.arrow {
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+
+			&-active-down {
+				margin-right: 40px;
+			}
+			&-active-up {
+				margin-right: -40px;
+			}
 		}
 	}
+
+	// & &-bar {
+	// 	height: 3.5em;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: space-between;
+	// }
+
 	&-button {
 		border: .5px solid gray;
 	}
 	& .navbar-nav a {
-		color: $color-link;
+		color: white;
+		text-decoration: none;
+		margin-right: 30px;
 
 		&:hover {
 			color: $color-link-hover;
@@ -68,13 +104,13 @@
 	}
 }
 
-@media only screen and (max-width: 992px) {
-	.menu {
-		& &-bar {
-			width: 100%;
-		}
-	}
-}
+// @media only screen and (max-width: 992px) {
+// 	.menu {
+// 		& &-bar {
+// 			width: 100%;
+// 		}
+// 	}
+// }
 
 .none {
 	display: none !important;

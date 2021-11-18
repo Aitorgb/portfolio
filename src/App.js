@@ -3,7 +3,6 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import Home from './components/Screens/Home';
 import About from './components/Screens/About';
 import Projects from './components/Screens/Projects';
-import Menu from './components/Menu';
 import Contact from './components/Screens/Contact';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import { pdfjs } from 'react-pdf';
