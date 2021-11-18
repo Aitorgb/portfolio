@@ -19,8 +19,8 @@ export default function Menu() {
 				</div>
 			</div>
 		</Col>
-		// <nav className="navbar navbar-expand-lg menu">
-		// 	<div className="container">
+		// // // <nav className="navbar navbar-expand-lg menu">
+		// // // 	<div className="container">
 		// 		<div className="menu-bar">
 		// 			<Link className="navbar-brand" to="/">
 		// 				<span className="logo-simbol">&lt;</span>
