@@ -17,7 +17,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<div className="container footer-last">
+			{/* <div className="container footer-last">
 				<div className='footer-last-link'>
 					<a className='footer-link' href='https://www.linkedin.com/in/aitor-guerrero/'>
 						<i className="fa fa-2x fa-linkedin" aria-hidden="true" />
@@ -27,7 +27,7 @@ export default function Contact() {
 					</a>
 				</div>
 				<div className='footer-last-created'>Desarrollado con 💙 por Aitor Guerrero © 2021</div>
-			</div>
+			</div> */}
 		</footer>
 	);
 }

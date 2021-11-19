@@ -1,15 +1,25 @@
 import React from 'react';
+import { Col, Container, Row } from 'reactstrap';
 import '../Stylesheet/Presentation.scss';
 
 export default function Presentation() {
 	return (
 		<div className="presentation">
-			<div className="container">
-				<div className="presentation-container">
-					<div>¡Hola! Soy Aitor Guerrero</div>
-					<div>Desarrollador front-end Junior</div>
-				</div>
-			</div>
+			<Container>
+				<Row>
+					<Col xs="12" sm="6" md={{ span: 3, offset: 2 }} className="d-flex align-items-center">
+						<div className="line-detail" />
+						<div className="ml-4">
+							<div className="presentation-title">¡Hola! Soy Aitor Guerrero</div>
+							<div className="presentation-container">
+								Desarrollador full-stack web al que le apasiona enfrentarse a nuevos retos. Me
+								considero una persona resolutiva, que intenta siempre intentar superar cualquier
+								obstáculo que se presente.
+							</div>
+						</div>
+					</Col>
+				</Row>
+			</Container>
 		</div>
 	);
 }
