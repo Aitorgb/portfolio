@@ -1,6 +1,14 @@
 
 
 .Home {
-   margin-top: 8em;
+   overflow-y: hidden;
+   display: flex;
+   min-height: 100vh;
+   
+   .scroll > div{
+      min-width: 100vw;
+     // min-height: 100vh;
+      // height: 100%;
+   }
 }
 

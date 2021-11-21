@@ -15,25 +15,7 @@ export default function About() {
 	};
 
 	return (
-		<div>
-			{seeCv && (
-				<div className="modal-cv">
-					<div className="modal-cv-container">
-						<div className="modal-cv-buttons">
-							<a href="/pdf/CV_AITOR_GUERRERO.pdf" download>
-								{' '}
-								Descargar CV
-							</a>
-							<button onClick={closeModal}>
-								<i class="fa fa-times" aria-hidden="true" />
-							</button>
-						</div>
-						<Document file="/pdf/CV_AITOR_GUERRERO.pdf">
-							<Page pageNumber={1} />
-						</Document>
-					</div>
-				</div>
-			)}
+		
 			<div className="about">
 				<div className="container">
 					<div className="row">
@@ -50,10 +32,9 @@ export default function About() {
 								Ver CV
 							</button>
 						</div>
-						<div className="col-md-6" />
+
 					</div>
 				</div>
 			</div>
-		</div>
 	);
 }

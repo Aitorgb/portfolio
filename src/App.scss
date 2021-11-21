@@ -12,7 +12,11 @@ body {
 	font-size: 16px;
 	box-sizing: border-box;
 	background: $color-bg;
+	color: white;
+	width: 100%;
 }
+
+::-webkit-scrollbar {display: none;}
 
 h3 {
 	width: 40%;

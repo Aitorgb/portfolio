@@ -7,7 +7,7 @@ export default function Presentation() {
 		<div className="presentation">
 			<Container>
 				<Row>
-					<Col xs="12" sm="6" md={{ span: 3, offset: 2 }} className="d-flex align-items-center">
+					<Col xs="12" sm="6" md={{ size: 6, order: 2, offset: 1 }} className="d-flex align-items-center">
 						<div className="line-detail" />
 						<div className="ml-4">
 							<div className="presentation-title">¡Hola! Soy Aitor Guerrero</div>
