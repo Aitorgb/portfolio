@@ -1,7 +1,7 @@
 import './App.scss';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import Home from './components/Screens/Home';
-import About from './components/Screens/About';
+import Services from './components/Screens/Services';
 import Projects from './components/Screens/Projects';
 import Contact from './components/Screens/Contact';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
@@ -15,7 +15,7 @@ function App() {
 			<Layout>
 				<Switch>
 					<Route exact path="/" component={Home} />
-					<Route exact path="/about" component={About} />
+					<Route exact path="/services" component={Services} />
 					<Route exact path="/projects" component={Projects} />
 					<Route exact path="/contact" component={Contact} />
 					<Redirect to="/" />

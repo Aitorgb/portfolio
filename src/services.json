@@ -1,0 +1,20 @@
+[{
+    "name": "Mantenimiento Web",
+    "image": "/img/services/manteinance.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+}, {
+    "name": "Creación y Diseño Web",
+    "image": "/img/services/web.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+},
+{
+    "name": "Diseño gráfico",
+    "image": "/img/services/grafic-design.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+},
+ {
+    "name": "Imprenta",
+    "image": "/img/services/printing.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+}]
