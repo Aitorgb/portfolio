@@ -43,6 +43,7 @@
 	width: 100%;
 	top: 0;
 	position: fixed;
+	z-index: 50;
 
 	&-option {
 		height: 80px;
@@ -52,6 +53,11 @@
 	}
 
 	&-arrow {
+
+		button {
+			background: transparent;
+			border: none;
+		}
 		display: flex;
 		flex-direction: column;
 		height: 120px;
@@ -68,6 +74,7 @@
 		}
 
 		.arrow {
+			z-index: 50;
 			width: 40px;
 			height: 40px;
 			display: flex;

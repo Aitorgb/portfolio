@@ -4,8 +4,9 @@ import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { RiFileUserLine, RiGithubLine, RiHeart3Fill, RiLinkedinBoxLine, RiMailDownloadLine } from 'react-icons/ri';
 import { Document, Page } from 'react-pdf';
+import { Button } from 'reactstrap';
 
-export default function Menu() {
+export default function Menu(props) {
 	const [ seeCv, setSeeCV ] = useState(false);
 
 	const HandleClick = () => {
@@ -88,15 +89,15 @@ export default function Menu() {
 				<nav className="navbar">
 					<div className="container justify-content-end">
 						<div className="menu-arrow ">
-							<div className="arrow arrow-active-up">
+							<Button onClick={props.moveToRight} className="arrow arrow-active-up">
 								<AiOutlineRight size={20} color="white" />
-							</div>
+							</Button>
 
 							<div className="line" />
 							<div className="line line-vertical" />
-							<div className="arrow arrow-active-down">
+							<Button onClick={props.moveToLeft} className="arrow arrow-active-down">
 								<AiOutlineLeft size={20} color="white" />
-							</div>
+							</Button>
 						</div>
 					</div>
 				</nav>
@@ -111,7 +112,8 @@ export default function Menu() {
 					</Link>
 				</div>
 				<div className="footer-last-created">
-					Desarrollado con {<RiHeart3Fill color="#fd7014" />} por Aitor Guerrero © 2021
+					{/* Desarrollado con {<RiHeart3Fill color="#fd7014" />} por  */}
+					Aitor Guerrero © 2021
 				</div>
 			</footer>
 		</React.Fragment>
