@@ -86,16 +86,16 @@ export default function Menu(props) {
 						</div>
 					</div>
 				</nav>
-				<nav className="navbar">
-					<div className="container justify-content-end">
+				<nav className="navbar" style={{contain: 'size'}}>
+					<div className="container justify-content-end" style={{contain: 'size'}}>
 						<div className="menu-arrow ">
-							<Button onClick={props.moveToRight} className="arrow arrow-active-up">
+							<Button onClick={props.arrowRight} className="arrow arrow-active-up">
 								<AiOutlineRight size={20} color="white" />
 							</Button>
 
 							<div className="line" />
 							<div className="line line-vertical" />
-							<Button onClick={props.moveToLeft} className="arrow arrow-active-down">
+							<Button onClick={props.arrowLeft} className="arrow arrow-active-down">
 								<AiOutlineLeft size={20} color="white" />
 							</Button>
 						</div>

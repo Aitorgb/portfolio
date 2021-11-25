@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 
 export default function CardService(props) {
 	return (
@@ -8,6 +9,7 @@ export default function CardService(props) {
 				<div className="card-service-title">{props.name}</div>
 				<div className="card-service-description">{props.description}</div>
 			</div>
+			<Button className='card-service-button'>Descubre más</Button>
 		</div>
 	);
 }

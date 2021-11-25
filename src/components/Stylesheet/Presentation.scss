@@ -4,14 +4,17 @@
 	color: white;
 	margin-top: 12em;
 	font-size: 18px;
-
+	
 	.line-detail {
 		background: $color-detail;
 		width: 90px;
 		height: 100%;
-     
+	 
 	}
-
+	
+	&-container {
+		margin-bottom: 10px;
+	}
 	&-title {
 		font-size: 36px;
 		margin-bottom: 25px;
@@ -19,3 +22,5 @@
 	}
 
 }
+
+

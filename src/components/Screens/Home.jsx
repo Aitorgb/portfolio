@@ -5,9 +5,11 @@ import Services from './Services';
 import Contact from './Contact';
 import Presentation from './Presentation';
 import Projects from './Projects';
+import Menu from '../Menu';
+
 
 export default function Home() {
-	const [ buttonRight, setButtonRight ] = useState(0);
+	const [ widthNow, setWidthNow ] = useState(window.innerWidth);
 
 	const onWheel = (element, ev) => {
 		const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
@@ -25,31 +27,54 @@ export default function Home() {
 		});
 	};
 
-	const centerInit = (el, ev) => {
+	const centerInit = (el) => {
 		let container = document.querySelector('.Home');
-		// container.scrollTo({
-		// 	left: window.innerHeight * 2,
-		// 	behaviour: 'smooth' //if you want smooth scrolling
-		// });
-
+		setWidthNow(el.getItemById(1).entry.target.clientWidth);
 		container.scrollTo({
 			left: el.getItemById(1).entry.target.clientWidth,
 			behaviour: 'smooth' //if you want smooth scrolling
 		});
+	};
+
+	const handleLeft = () => {
+		let container = document.querySelector('.Home');
+		const newWidth = widthNow - window.innerWidth;
+
+		const width = newWidth < 0 ? window.innerWidth * 2 : newWidth
+
+		container.scrollTo({
+			left: width,
+			behaviour: 'smooth' //if you want smooth scrolling
+		});
+		setWidthNow(width)
+
+	
+	};
+
+	const handleRight = (el) => {
+		let container = document.querySelector('.Home');
+		const newWidth = widthNow + window.innerWidth;
+
+		const width = newWidth > window.innerWidth * 2 ? 0 : newWidth
+
+		container.scrollTo({
+			left: width,
+			behaviour: 'smooth' //if you want smooth scrolling
+		});
+		setWidthNow(width)
 		
 	};
 	return (
 		<div className="Home">
-			<ScrollMenu itemClassName="scroll Home" onWheel={onWheel} onInit={centerInit}>
-			<Services itemId={0} />
-				
-				<Presentation itemId={1} />
-				{/* <Projects /> */}
+			<ScrollMenu itemClassName="scroll" onWheel={onWheel} onInit={centerInit}>
+				<Services itemId={0} key={0} />
+
+				<Presentation itemId={1} key={1} />
+				<Projects itemId={2}/>
 			</ScrollMenu>
-			{/* <Presentation /> */}
-			{/* <Services />
-			<Projects />
-			<Contact /> */}
+			<Menu arrowLeft={handleLeft} arrowRight={handleRight} />
+
+			{/* <Contact />  */}
 		</div>
 	);
 }

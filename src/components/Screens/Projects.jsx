@@ -7,7 +7,7 @@ export default function Projects() {
 	// const HandleClick = () => {
 	// 	console.log('hei');
 	// };
-	console.log(dataProject);
+
 	return (
 		<div className="projects">
 			<div className="container">
