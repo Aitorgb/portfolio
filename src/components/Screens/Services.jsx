@@ -28,6 +28,7 @@ export default function About() {
 									image={service.image}
 									name={service.name}
 									description={service.description}
+									moreDescription={service.moreDescription}
 								/>
 							</Col>
 						);
